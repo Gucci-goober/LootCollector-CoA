@@ -1,5 +1,12 @@
 # LootCollector CoA
 
+## 1.1.0 package (2026-11-13)
+
+Skip this download if sell prices are already white and the game is not freezing from Lua errors. If you already have the 2026-11-04 package, the older tooltip, chat, DragonUI, and framerate fixes are the same. The version number stays 1.1.0, so the addon will not tell other players to update. Pins, sharing, and the database are unchanged.
+
+- **Sell prices.** The 2026-11-04 white font was never created on this client, so bag and merchant prices stayed grey. Each price now gets its own copy of the font and is set to white. Red and yellow prices, such as when you cannot afford an item, stay as they are. Get this if prices are still grey. If they are already white, this part does not affect you.
+- **Freezes.** The minimap updater could throw a Lua error on every frame while loading or on a taxi, and that error spam locked the client. It now waits instead of retrying every frame, and it ignores a missing facing or a pin with no coordinates. Get this if LootCollector errors are freezing the game. If the game is not freezing, this part does not affect you.
+
 ## 1.1.0 package (2026-11-04)
 
 Skip this download if bag and merchant sell prices already look normal, and item tooltips still show after you close the world map. Also skip if chat is already quiet, you do not use DragonUI, and your framerate stays steady through a dungeon. The version number stays 1.1.0, so the addon will not tell other players to update. Pins, sharing, and the database are unchanged.
